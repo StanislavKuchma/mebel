@@ -65,8 +65,8 @@ export const galleryItems = [
     description: "",
   },
   {
-    preview: "/foto/foto14.webp",
-    original: "/foto/foto14.webp",
+    preview: "/images/foto1.webp",
+    original: "/images/foto1.webp",
     description: "",
   },
   {
