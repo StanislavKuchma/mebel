@@ -1,7 +1,7 @@
 export const galleryItems = [
   {
-    preview: "./foto/foto1.webp",
-    original: "./foto/foto1.webp",
+    preview: "/images/comand1.jpg",
+    original: "/images/comand4.jpg",
     description: "Кухня",
   },
   {
