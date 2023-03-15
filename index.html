@@ -18,15 +18,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
 
   </head>
   <body>
-<li><a href="02-lightbox.html">SimpleLightbox library</a></li>
+<!-- <li><a href="02-lightbox.html">SimpleLightbox library</a></li> -->
     <header class="header">
       <div class="conteiner header-conteiner">
         <nav class="nav">
-          <a href="" class="logo link"> <span>Mebel</span>iya</a>
+          <a href="" class="logo link"> <span>MeBeL</span>iya</a>
           <ul class="nav__list list">
             <li class="nav__item">
               <a href="" class="link current nav__link">Головна</a>
@@ -34,9 +35,14 @@
             <li class="nav__item">
               <a href="./02-lightbox.html" class="link nav__link">Портфолио</a>
             </li>
-            <li class="nav__item">
+                        <select class="change-lang">
+                      
+                          <option value="ru" selected>UA</option>
+                          <option value="en">EN</option>
+                        </select>
+            <!-- <li class="nav__item">
               <a href="./contacts.html" class="link nav__link">Контакты</a>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <!-- Старт мобильного меню -->
@@ -114,6 +120,40 @@
           <h1 class="hero-title">Найкращі кухні у нас</h1>
           <button class="button" data-modal-open>Заказати прорахунок</button>
         </div>
+      </section>
+      <div style="background-color: #fff; width: 100px; height: 30px;"  ></div>
+      <!-- Slider main container -->
+      <section class="section slader">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="./foto/foto1.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto2.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto3.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto4.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto5.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto6.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto7.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto8.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto9.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto10.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto11.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto12.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto12.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto14.webp" alt="Кухня"></div>
+          <div class="swiper-slide"><img src="./foto/foto15.webp" alt="Кухня"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
       </section>
       <!--Секция наши преимущества-->
       <section class="section">
@@ -365,6 +405,8 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"></script>
     <script defer src="js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
 
     
   </body>
