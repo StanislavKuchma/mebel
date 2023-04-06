@@ -1,7 +1,7 @@
 export const galleryItems = [
   {
-    preview: "./foto/foto1.webp",
-    original: "./foto/foto1.webp",
+    preview: "./foto/foto15.webp",
+    original: "./foto/foto15.webp",
     description: "Кухня",
   },
   {
@@ -70,8 +70,8 @@ export const galleryItems = [
     description: "",
   },
   {
-    preview: "./foto/foto15.webp",
-    original: "./foto/foto15.webp",
+    preview: "./foto/foto1.webp",
+    original: "./foto/foto1.webp",
     description: "",
   },
 ];
