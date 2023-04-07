@@ -3,7 +3,7 @@
   --primary--text--color: rgba(117, 117, 117, 1);
   --text--color: #212121;
   --text--color--white: #ffffff;
-  --accent--color: #c4d107;
+  --accent--color: #f5c242;
   --main--backgraundcolor: #ffffff;
   --backgraundcolor: #f5f4fa;
   --hero--backgraundcolor: #2f303a;
@@ -739,22 +739,22 @@ body {
 }
 @media (min-width: 481px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft31.webp);
   }
 }
 @media (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft31.webp);
   }
 }
 @media (min-width: 769px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft1.webp);
   }
 }
 @media (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft1.webp);
   }
 }
 .hero-title {
