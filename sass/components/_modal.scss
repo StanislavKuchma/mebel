@@ -3,6 +3,8 @@
   width: 100vw;
   height: 100vh;
 
+
+
   @media screen and (min-width: 480px) {
     width: 450px;
     height: 609px;
@@ -52,3 +54,7 @@
     transition: fill 250ms var(--time--animation);
   }
 }
+// body.modal-open {
+//   height: 100vh;
+//   overflow-y: hidden;
+// }
