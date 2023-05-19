@@ -29,7 +29,16 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
 }
+.open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+// body .backdrop .modal {
+//   height: 100vh;
+//   overflow-y: hidden;
+// }
 
 .image-swiper-slide {
   text-align: center;

@@ -63,6 +63,11 @@ body {
   letter-spacing: 0.03em;
 }
 
+.open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 .image-swiper-slide {
   text-align: center;
 }
@@ -91,7 +96,7 @@ body {
 
 /*Button*/
 .button {
-  color: var(--text--color--white);
+  color: var(--text--color);
   background-color: var(--accent--color);
   font-family: inherit;
   font-weight: bold;
@@ -351,7 +356,7 @@ body {
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
-    height: 609px;
+    height: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -720,7 +725,7 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft.webp);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/loft1.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -734,27 +739,27 @@ body {
 
 @media (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/loft1.webp);
   }
 }
 @media (min-width: 481px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft31.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/loft1.webp);
   }
 }
 @media (min-width: 481px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft31.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/loft1.webp);
   }
 }
 @media (min-width: 769px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft1.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/loft1.webp);
   }
 }
 @media (min-width: 769px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/loft1.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/hero/loft1.webp);
   }
 }
 .hero-title {
