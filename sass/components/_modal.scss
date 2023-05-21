@@ -1,10 +1,11 @@
 .modal {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
  
 
   @media screen and (min-width: 480px) {
+
     width: 450px;
     height: 550px;
   }
@@ -27,6 +28,7 @@
   transition: transform 250ms var(--time--animation);
 }
 .modal-close-icon {
+  // padding-top: 20px;
   width: 18px;
   height: 18px;
 }
@@ -35,8 +37,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 8px;
-  right: 8px;
+  top: 25px;
+  right: 25px;
 
   width: 30px;
   height: 30px;
@@ -44,12 +46,13 @@
 
   cursor: pointer;
 
-  background: #ffffff;
+  background: var(--accent--color);
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   &:hover,
   &:focus {
-    fill: var(--accent--color);
+    fill: var(#000);
+    background-color: var(--botton--color--hover);
     transition: fill 250ms var(--time--animation);
   }
 }

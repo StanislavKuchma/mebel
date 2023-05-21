@@ -342,7 +342,7 @@ body {
 .modal {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   border-radius: 4px;
   padding: 40px;
   background-color: #ffffff;
@@ -376,17 +376,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 8px;
-  right: 8px;
+  top: 25px;
+  right: 25px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   cursor: pointer;
-  background: #ffffff;
+  background: var(--accent--color);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .modal-button:hover, .modal-button:focus {
-  fill: var(--accent--color);
+  fill: var(#000);
+  background-color: var(--botton--color--hover);
   transition: fill 250ms var(--time--animation);
 }
 
