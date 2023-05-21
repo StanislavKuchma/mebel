@@ -11,12 +11,8 @@ const refs = {
   name: document.querySelector(".name"),
   tel: document.querySelector(".tel"),
 };
-console.log(refs.form);
-console.log(refs.email);
-console.log(refs.textArea);
-console.log(refs.name);
-console.log(refs.tel);
-refs.form.addEventListener("submit", onFormSubmit);
+
+// refs.form.addEventListener("submit", onFormSubmit);
 refs.email.addEventListener("input", _.throttle(onEmailInput, 500));
 refs.textArea.addEventListener("input", _.throttle(onTextAreaInput, 500));
 
