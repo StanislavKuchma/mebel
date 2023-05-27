@@ -10,11 +10,21 @@ const refs = {
   email: document.querySelector(".email"),
   name: document.querySelector(".name"),
   tel: document.querySelector(".tel"),
+  button: document.querySelector(".button"),
 };
+console.log(refs.form);
 
+// refs.button.addEventListener("click", reset);
 // refs.form.addEventListener("submit", onFormSubmit);
 refs.email.addEventListener("input", _.throttle(onEmailInput, 500));
 refs.textArea.addEventListener("input", _.throttle(onTextAreaInput, 500));
+
+// function reset() {
+//   // reset();
+//   console.log("end");
+// }
+
+// document.getElementById("myform").reset();
 
 populateTextarea();
 function onFormSubmit(evt) {

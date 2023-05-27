@@ -15,6 +15,10 @@
 </head>
 
 <body>
+    <div class="upward" onClick = "scrollTopTop()" >
+        <img src="./img1/chevron_up_icon_250493.png" alt="up">
+    </div>
+
         <header class="header">
             <div class="conteiner header-conteiner">
                 <nav class="nav">
@@ -67,18 +71,11 @@
                                 mebeleiya@ukr.net</a>
                         </li>
                     </ul>
-                    <ul class="mobil-social-network">
-                        <li><a class="mobil-social-network-link link" href="">Instagram</a></li>
-                        <li><a class="mobil-social-network-link link" href="">Twitter</a></li>
-                        <li><a class="mobil-social-network-link link" href="">Facebook</a></li>
-                        <li><a class="mobil-social-network-link link" href="">LinkedIn</a></li>
-                    </ul>
-        
                 </div>
                 <!--Конец мобильного меню  -->
                 <ul class="contact list">
                     <li class="contact-tablet">
-                        <a href="mebeleiya@ukr.net" class="link contact__link">
+                        <a href="maito:mebeleiya@ukr.net" class="link contact__link">
                             <svg width="16" height="12" class="contact__icon">
                                 <use href="./images/symbol-defs.svg#icon-envelope">
                                 </use>
@@ -92,13 +89,13 @@
                             </svg>+38 095 624 28 92</a>
                     </li>
 
-                                        <li class="contact-tablet">
-                                            <a href="tel:+380956242892" class="link contact__link">
-                                                <svg width="10" height="16" class="contact__icon">
-                                                    <use href="./images/symbol-defs.svg#icon-smartphone">
-                                                    </use>
-                                                </svg>+38 097 607 50 54</a>
-                                        </li>
+                    <li class="contact-tablet">
+                        <a href="tel:+380956242892" class="link contact__link">
+                            <svg width="10" height="16" class="contact__icon">
+                                <use href="./images/symbol-defs.svg#icon-smartphone">
+                                </use>
+                            </svg>+38 097 607 50 54</a>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -107,11 +104,31 @@
     <!-- Add gallery items to this list -->
     <section class="section">
     <ul class="gallery"></ul>
+
+<!-- 
+    <button class="button" style="width: 100px;height: 100px; border-radius: 50%; position: fixed; right: 50px;bottom: 40px;">Вверх</button> -->
+<!-- <div class="buttom btn-up btn-up_hide"></div> -->
+
     </section>
+    <script>
+        window.addEventListener('scroll', function(){
+            var scroll = document.querySelector('.upward');
+            scroll.classList.toggle("active", window.scrollY>500)
+            console.log(scroll)
+        })
+        function scrollTopTop (){
+            window.scrollTo({
+                top: 0,
+            })
+        }
+
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.2/simple-lightbox.min.js"
         integrity="sha512-w+rQhMH2MD2B83HHL1XEFyRYOVG5SEUjD9tLoRalSQWDBe4x9DVD7FX34ytJ4uVplDJMik8aZLrQ6bSIQSTXZA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/02-lightbox.js" type="module"></script>
+    <!-- <script src="js/buttontop.js" type="module"></script> -->
 </body>
     <footer class="footer">
         <div class="conteiner footer-sections">
@@ -123,7 +140,7 @@
                             <a class="address">м. Київ вул. Григоренко, 39б</a>
                         </li>
                         <li class="">
-                            <a href="mebeleiya@ukr.net" class="footer-contacts-link link">mebeleiya@ukr.net</a>
+                            <a href="mailto:mebeleiya@ukr.net" class="footer-contacts-link link">mebeleiya@ukr.net</a>
                         </li>
                         <li class="">
                             <a href="tel:+38056242892" class="footer-contacts-link link">+38 095 624 28 92</a>
@@ -171,6 +188,7 @@
             </div> -->
 
         </div>
+     
     </footer>
-
+<script defer src="js/mobile-menu.js"></script>
 </html>
