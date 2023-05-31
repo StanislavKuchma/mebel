@@ -68,7 +68,11 @@ body {
   overflow-y: hidden;
 }
 
-.image-swiper-slide {
+.swiper-slide img {
+  max-width: 100%;
+}
+
+.swiper-slide {
   text-align: center;
 }
 
