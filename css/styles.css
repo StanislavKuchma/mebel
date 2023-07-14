@@ -42,8 +42,3 @@
 .gallery__link:hover {
     cursor: zoom-in;
 }
-@media screen and (min-width: 768px) {
-    body .about {
-        font-size: 30px;
-    }
-}
