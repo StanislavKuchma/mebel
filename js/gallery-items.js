@@ -229,4 +229,19 @@ export const galleryItems = [
     original: "./foto/foto46.webp",
     description: "Шафа купе",
   },
+  {
+    preview: "./foto/foto47.webp",
+    original: "./foto/foto47.webp",
+    description: "Кухня шпон+мдф фарба",
+  },
+  {
+    preview: "./foto/foto48.webp",
+    original: "./foto/foto48.webp",
+    description: "Кухня шпон+мдф фарба",
+  },
+  {
+    preview: "./foto/foto49.webp",
+    original: "./foto/foto49.webp",
+    description: "Кухня шпон+мдф фарба",
+  },
 ];
