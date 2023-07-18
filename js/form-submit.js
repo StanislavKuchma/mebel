@@ -12,7 +12,7 @@ const refs = {
   tel: document.querySelector(".tel"),
   button: document.querySelector(".button"),
 };
-console.log(refs.form);
+// console.log(refs.form);
 
 // refs.button.addEventListener("click", reset);
 // refs.form.addEventListener("submit", onFormSubmit);

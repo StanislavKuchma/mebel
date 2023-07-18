@@ -1,5 +1,20 @@
 export const galleryItems = [
   {
+    preview: "./foto/foto47.webp",
+    original: "./foto/foto47.webp",
+    description: "Кухня шпон+мдф фарба",
+  },
+  {
+    preview: "./foto/foto48.webp",
+    original: "./foto/foto48.webp",
+    description: "Кухня шпон+мдф фарба",
+  },
+  {
+    preview: "./foto/foto49.webp",
+    original: "./foto/foto49.webp",
+    description: "Кухня шпон+мдф фарба",
+  },
+  {
     preview: "./foto/foto15.webp",
     original: "./foto/foto15.webp",
     description: "Кухня МДФ фарба та шпон",
@@ -228,20 +243,5 @@ export const galleryItems = [
     preview: "./foto/foto46.webp",
     original: "./foto/foto46.webp",
     description: "Шафа купе",
-  },
-  {
-    preview: "./foto/foto47.webp",
-    original: "./foto/foto47.webp",
-    description: "Кухня шпон+мдф фарба",
-  },
-  {
-    preview: "./foto/foto48.webp",
-    original: "./foto/foto48.webp",
-    description: "Кухня шпон+мдф фарба",
-  },
-  {
-    preview: "./foto/foto49.webp",
-    original: "./foto/foto49.webp",
-    description: "Кухня шпон+мдф фарба",
   },
 ];
