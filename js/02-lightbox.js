@@ -1,4 +1,5 @@
 import { galleryItems } from "./gallery-items.js";
+
 // Change code below this line
 const container = document.querySelector(`ul[class="gallery"]`);
 
@@ -12,7 +13,7 @@ function createImageItem(item) {
   return item
     .map(({ preview, original, description }) => {
       return `
-<a class="gallery__item" href="${original}">
+<a class="gallery__item" title="${description}" href="${original}">
   <img class="gallery__image" src="${preview}" alt="${description}"/>
 </a>`;
     })
@@ -24,9 +25,13 @@ function onClick(evt) {
   if (!evt.target.classList.contains(`gallery__image`)) {
     return;
   }
-  let lightbox = new SimpleLightbox(".gallery a", {
-    captionDelay: 250,
-    captionsData: "alt",
-    // captionPosition: `top`,
-  });
+  // let lightbox = new SimpleLightbox(".gallery a", {
+  //   captionDelay: 250,
+  //   captionsData: "alt",
+  // });
 }
+
+let lightbox = new SimpleLightbox(".gallery a", {
+  captionDelay: 250,
+  captionsData: "alt",
+});

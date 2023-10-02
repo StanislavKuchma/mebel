@@ -1,122 +1,4 @@
-// "use strict"
-
-// document.addEventListener('DOMContentLoaded', function () {
-// 	const form = document.getElementById('form');
-// 	form.addEventListener('submit', formSend);
-
-// 	async function formSend(e) {
-// 		e.preventDefault();
-
-// 		let error = formValidate(form);
-
-// 		let formData = new FormData(form);
-// 		formData.append('image', formImage.files[0]);
-
-// 		if (error === 0) {
-// 			form.classList.add('_sending');
-// 			let response = await fetch('sendmail.php', {
-// 				method: 'POST',
-// 				body: formData
-// 			});
-// 			if (response.ok) {
-// 				let result = await response.json();
-// 				alert(result.message);
-// 				formPreview.innerHTML = '';
-// 				form.reset();
-// 				form.classList.remove('_sending');
-// 			} else {
-// 				alert("Ошибка");
-// 				form.classList.remove('_sending');
-// 			}
-// 		} else {
-// 			alert('Заполните обязательные поля');
-// 		}
-
-// 	}
-
-// 	function formValidate(form) {
-// 		let error = 0;
-// 		let formReq = document.querySelectorAll('._req');
-
-// 		for (let index = 0; index < formReq.length; index++) {
-// 			const input = formReq[index];
-// 			formRemoveError(input);
-
-// 			if (input.classList.contains('_email')) {
-// 				if (emailTest(input)) {
-// 					formAddError(input);
-// 					error++;
-// 				}
-// 			} else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
-// 				formAddError(input);
-// 				error++;
-// 			} else {
-// 				if (input.value === '') {
-// 					formAddError(input);
-// 					error++;
-// 				}
-// 			}
-// 		}
-// 		return error;
-// 	}
-// 	function formAddError(input) {
-// 		input.parentElement.classList.add('_error');
-// 		input.classList.add('_error');
-// 	}
-// 	function formRemoveError(input) {
-// 		input.parentElement.classList.remove('_error');
-// 		input.classList.remove('_error');
-// 	}
-// 	//Функция теста email
-// 	function emailTest(input) {
-// 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-// 	}
-
-// 	//Получаем инпут file в переменную
-// 	const formImage = document.getElementById('formImage');
-// 	//Получаем див для превью в переменную
-// 	const formPreview = document.getElementById('formPreview');
-
-// 	//Слушаем изменения в инпуте file
-// 	formImage.addEventListener('change', () => {
-// 		uploadFile(formImage.files[0]);
-// 	});
-
-// 	function uploadFile(file) {
-// 		// провераяем тип файла
-// 		if (!['image/jpeg', 'image/png', 'image/gif'].includes(file.type)) {
-// 			alert('Разрешены только изображения.');
-// 			formImage.value = '';
-// 			return;
-// 		}
-// 		// проверим размер файла (<2 Мб)
-// 		if (file.size > 2 * 1024 * 1024) {
-// 			alert('Файл должен быть менее 2 МБ.');
-// 			return;
-// 		}
-
-// 		var reader = new FileReader();
-// 		reader.onload = function (e) {
-// 			formPreview.innerHTML = `<img src="${e.target.result}" alt="Фото">`;
-// 		};
-// 		reader.onerror = function (e) {
-// 			alert('Ошибка');
-// 		};
-// 		reader.readAsDataURL(file);
-// 	}
-// });
-// let div = document.createElement("div");
-// div.className = "alert";
-// div.innerHTML = "<strong>Всем привет!</strong> Вы прочитали важное сообщение.";
-// document.body.append(div);
-
-// div.insertAdjacentHTML(
-//   "beforebegin",
-//   `<div class="swiper-slide"><img src="./foto/foto49.webp" alt="Кухня"></div>`
-// );
 // div.insertAdjacentHTML("afterend", "<p>Пока</p>");
-
-// const array1 = ["a", "b", "c"];
 
 // array1.forEach((element) => console.log(element));
 
@@ -125,17 +7,40 @@ function getImages(n) {
     image = new Image();
 
     image.src = "foto/foto" + i + ".webp";
-    console.log(image);
+    // console.log(image.src);
 
-    array.push(image);
+    array.push(image.src);
   }
 
   return array;
 }
 
-const a = getImages();
-console.log(a);
+const a = getImages(46);
 
-// var image = new Image();
-// image.src = "foto/foto1.webp";
-// console.dir(image);
+// console.log(a);
+
+// dla kartinok
+// let wrapper = document.querySelector(".img__wrapper");
+
+// function donwload(input) {
+//   let file = input.files[0];
+//   let reader = new FileReader();
+//   reader.readAsDataURL(file);
+
+//   reader.onload = function () {
+//     let img = document.createElement("img");
+//     wrapper.appendChild(img);
+//     img.src = reader.result;
+//   };
+// }
+
+// 1 переделиваем масив в масив адресов
+// 2
+// var names = ['1.jpg', 'cat.jpg', 'hren.jpg', 'dog.gif', 'elefant.png', '987.jpg']; // массив адресов/имён файлов изображений
+
+// var arrayImage = []; // определяете искомый массив объектов изображений
+// for var j = 0, J = names.length; j < J; j++)
+//    {
+//    arrayImage [j] = new Image ();
+//    arrayImage [j].src = names [j];
+//    }

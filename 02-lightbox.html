@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.2/simple-lightbox.min.css"
-        integrity="sha512-ej1gHD42cpakWkaVUaxh8+7ZmOUi0gva7JTB/WJBzTk80FwyodnaLwDVgVW9QBErUOa+CDtuaBJ5UrKWX/01aw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./node_modules/simplelightbox/dist/simple-lightbox.css"/>
+
 </head>
 
 <body>
@@ -28,7 +27,7 @@
                         <a href="./index.html" class="link nav__link">Головна</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="link current nav__link">Портфолио</a>
+                        <a href="" class="link current nav__link">Портфоліо</a>
                     </li>
 
                 </ul>
@@ -48,10 +47,10 @@
                 </button>
                 <ul class="mobile-menu">
                     <li class="nav__item">
-                        <a href="./index.html" class="link mobile-menu-item">Студия</a>
+                        <a href="./index.html" class="link mobile-menu-item">Головна</a>
                     </li>
                     <li class="nav__item">
-                        <a href="" class="link current mobile-menu-item">Портфолио</a>
+                        <a href="" class="link current mobile-menu-item">Портфоліо</a>
                     </li>
 
                 </ul>
@@ -64,7 +63,7 @@
                     </li>
                     <li class="nav__item">
                         <a href="tel:+380956242892" class="link mobile-menu-tel">
-                            +38 097 607 50 54</a>
+                            +38 097 607 50 54<br><span>(Viber,Telegram)</span></a>
                     </li>
                     <li class="nav__item">
                         <a href="mailto:mebeleiya@ukr.net" class="link mobile-menu-mail">
@@ -94,7 +93,7 @@
                         <svg width="10" height="16" class="contact__icon">
                             <use href="./images/symbol-defs.svg#icon-smartphone">
                             </use>
-                        </svg>+38 097 607 50 54</a>
+                        </svg>+38 097 607 50 54<span>(Viber,Telegram)</span></a>
                 </li>
             </ul>
         </div>
@@ -105,13 +104,12 @@
         <ul class="gallery"></ul>
 
 
-
     </section>
     <script>
         window.addEventListener('scroll', function () {
             var scroll = document.querySelector('.upward');
             scroll.classList.toggle("active", window.scrollY > 500)
-            console.log(scroll)
+ 
         })
         function scrollTopTop() {
             window.scrollTo({
@@ -121,11 +119,11 @@
 
 
     </script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.2/simple-lightbox.min.js"
-        integrity="sha512-w+rQhMH2MD2B83HHL1XEFyRYOVG5SEUjD9tLoRalSQWDBe4x9DVD7FX34ytJ4uVplDJMik8aZLrQ6bSIQSTXZA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./node_modules/simplelightbox/dist/simple-lightbox.js"></script>
+ 
     <script src="js/02-lightbox.js" type="module"></script>
-    <!-- <script src="js/buttontop.js" type="module"></script> -->
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 <footer class="footer">
     <div class="conteiner footer-sections">
@@ -160,13 +158,21 @@
                             </svg>
                         </a>
                     </li>
-                    <!-- <li class="social-item">
-                        <a href="" class="social-link">
-                            <svg class="social-icon">
-                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li> -->
+                <li class="social-item">
+                    <a href="https://viber.click/80976075054" class="social-link">
+                        <svg class="social-icon">
+                            <use href="./images/symbol-defs.svg#viber"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="https://t.me/mebeleiya" class="social-link">
+                        <svg class="social-icon">
+                            <use href="./images/symbol-defs.svg#telegram" />
+                            </use>
+                        </svg>
+                    </a>
+                </li>
                     <li class="social-item">
                         <a href="https://www.facebook.com/people/%D0%9C%D0%B5%D0%B1%D0%B5%D0%BB%D1%96%D1%8F/100093095523307/" class="social-link">
                             <svg class="social-icon">
@@ -186,6 +192,6 @@
     </div>
 
 </footer>
-<script defer src="js/mobile-menu.js"></script>
+
 
 </html>
